@@ -1,0 +1,12 @@
+/* this is the style for the button delete it will have a hover that will change background color when you hover on it*/
+
+.delete-btn {
+  background-color: lightblue; /* Example color */
+  color: white; /* Text color */
+  padding: 5px 10px; /* Add padding */
+  border-radius: 4px; /* Rounded corners */
+}
+
+.delete-btn:hover {
+  background-color: lightsalmon; /* backagroung color on hover */
+}

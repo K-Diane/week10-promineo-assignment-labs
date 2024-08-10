@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 10 Assignment</title>
+
+    <link rel="stylesheet" href="week10assignment.css">
+
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+  </head>
+  <body>
+    <!-- div which will style the backgroung color for the whole page -->
+     <main>
+
+        <div style="background-color:antiquewhite;">
+
+          <h1 class="text-center mb-5" >Welcome to the Plant House</h1>
+
+<!-- create a container with fixed row that will create horizontal groups of columns with col-md-6 (6 out of 12 columns)
+ and the justfy content is to put the image horizontally within the created columns -->
+      <div class="container mt-4">
+        <div class="row">
+
+          <div class="centerPic col-md-6 d-flex justify-content-center">
+           <img
+           src="./photo.jgp/orchid.jpg"
+           class="pictures"
+           alt="image of orchid plant"
+           />
+           <br>
+        
+          </div>
+        
+       
+         <br />
+
+         <div class="col-md-6 d-flex justify-content-center">
+
+         <p class="fs-5">
+            At Plant House, we are dedicated to helping you find the perfect plants for your garden or home. 
+            <br>
+            To streamline your experience, we have created an easy-to-use form that allows you to place plant orders and manage them efficiently.
+            <br>
+            <br>
+
+            Just enter your your first name, last name, Specify the type of plants you wish to order, Provide your email address so we can send you updates about your order 
+            and last Click the Submit button to add your plant order to our system. 
+
+         </p>
+         <br>
+         <br>
+
+         </div>
+         </div>
+         </div>
+<!-- the table will have 4 rows with first name, last name, email, number and the order we will create the option to delete in the js-->
+         <br>
+          <table class="table">
+             <thead  id="tableHeader"></thead>
+              <tr>
+               <th>#</th>
+               <th>First Name</th>
+               <th>Last Name</th>
+               <th>Plant Order</th>
+               <th>Email Address</th>    
+             </tr>
+             </thead>
+
+             <tbody id="tableBody"></tbody>
+
+          </table>
+
+<!-- the form with label form and front size of 5 and the input of text type and form control and placeholder place -->
+
+         <form>
+           <div>
+            <label for="firstName" class="form-label" class="fs-5"  >Frist Name</label>
+            <input type="text" class="form-control"  id="firstName" placeholder="Your First Name"></input>
+            </div>
+           <div>
+            <label for="lasttName" class="form-label" class="fs-5">Last Name</label>
+            <input type="text" class="form-control" id="lastName" placeholder="Your Last Name"></input>
+          </div>
+          <div>
+            <label for="plantOrder" class="form-label" class="fs-5">Plant Order</label>
+            <input type="text" class="form-control" id="plantOrder" placeholder="Plant Type"></input>
+          </div>
+          <div>
+            <label for="emailAddress" class="form-label" class="fs-5">Email Address</label>
+            <input type="text" class="form-control" id="emailAddress" placeholder="EMail address" ></input>
+          </div>
+
+           <button type="submit" class="btn btn-primary mt-2" class="fs-5" id="submitForm">submit</button>
+
+         </form>
+
+     <script src="node_modules/jquery/dist/jquery.js"></script>
+     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+     <script src="./week10assignment.js"></script>
+
+      </div>
+
+      </main>
+  </body>
+</html>
